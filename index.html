@@ -1,38 +1,150 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="ressources/style.css">
-    <title>Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" type="text/css" href="ressources/style.css" />
+  <title>Julien TESSIEAU - Web developer</title>
 </head>
-<body>
-    <header>
-        <h1>BLOG</h1>
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Social</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="content">
-        <main>
-            content
-        </main>
-        <aside>
-            <ul>
-                <li><a href="#">Articles Septembre</a></li>
-                <li><a href="#">Articles Aout</a></li>
-                <li><a href="#">Articles Juillet</a></li>
-                <li><a href="#">Articles Juine</a></li>
-            </ul>
-        </aside>
-    </div>
-    <footer>
-        Copyright Acronyme 2020
-    </footer>
+
+<body id="top">
+  <header>
+    <a href="index.html">
+      <img src="./ressources/img/logo-acronyme.svg" height="60px" />
+    </a>
+    <nav id="nav" role="navigation">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://twitter.com/Acr0nyme" target="_blank"><img class="social-mark"
+              src="./ressources/img/twitter.svg" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="https://github.com/acro-dev" target="_blank"><img class="social-mark"
+              src="./ressources/img/github.svg" alt="Github" /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content">
+    <main>
+      <section class="presentation">
+        <p class="presentation">Hi ! My name is Julien and I am a</p>
+        <h1>Web developer - PHP / Symfony</h1>
+      </section>
+    </main>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-title">Lan Night</h3>
+            <p class="project-description">
+              Static HTML/CSS website to get infomations about a Lan party for my association.
+              One form to contact us, and an other to pre-register.
+            </p>
+          </div>
+          <div class="project-bot">
+            <a href="https://github.com/acro-dev/lan-night" class="project-link">
+              GitHub Link
+            </a>
+            <div class="project-techno">
+              <h4>Languages</h4>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-title">Calendrier PHP</h3>
+            <p class="project-description">
+              Testing PHP date functions and use them to generate a calendar view of the current month,
+              or an other month according to arguments.
+            </p>
+          </div>
+          <div class="project-bot">
+            <a href="https://github.com/acro-dev/php-calendar" class="project-link">
+              GitHub Link
+            </a>
+            <div class="project-techno">
+              <h4>Languages</h4>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>PHP</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-top">
+            <h3 class="project-title">Html Signature generator</h3>
+            <p class="project-description">
+              The purpose was to automaticly generate the same signature for everybody in
+              the society. So i designed the signature model with html and a program with C++/QT to
+              replace some keyword with user input.
+            </p>
+          </div>
+          <div class="project-bot">
+            <a href="https://github.com/acro-dev/HTML-Signature-Generator" class="project-link">
+              GitHub Link
+            </a>
+            <div class="project-techno">
+              <h4>Languages</h4>
+              <ul>
+                <li>Html</li>
+                <li>CSS</li>
+                <li>C++</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact me</h2>
+      <form method="POST" action="">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="E-mail" />
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Your message"></textarea>
+        <button class="form-button" type="button">Send</button>
+      </form>
+    </section>
+
+  </div>
+
+  <div class="sideMenu">
+    <a href="#top">
+      <div class="goTop">H</div>
+    </a>
+    <a href="#projects">
+      <div class="goProjects">P</div>
+    </a>
+    <a href="#contact">
+      <div class="goContact">C</div>
+    </a>
+  </div>
+
+  <footer>
+    <p>Julien - Acronyme.me</p>
+  </footer>
 </body>
+
 </html>
