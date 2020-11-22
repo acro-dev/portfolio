@@ -1,4 +1,3 @@
-
 * {
   scroll-behavior: smooth !important;
   box-sizing: border-box;
@@ -10,9 +9,10 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  width: 80%;
   max-width: 1400px;
   margin: auto;
-  
+
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -109,7 +109,7 @@ section.presentation {
 .project {
   padding: 20px;
   display: grid;
-  grid-template-rows: repeat(2,auto);
+  grid-template-rows: repeat(2, auto);
   align-content: space-between;
   box-shadow: 0px 0px 15spx #333;
 }
@@ -138,7 +138,7 @@ section.presentation {
 
   margin: auto;
   margin-top: 3rem;
-  margin-bottom:3rem;
+  margin-bottom: 3rem;
 
   text-align: center;
   color: white;
@@ -153,9 +153,9 @@ section.presentation {
 }
 
 .project-link:hover {
-  background: linear-gradient(30deg,#22eac9,#ffd233);
-  color:#333;
-  border:2px solid #333;
+  background: linear-gradient(30deg, #22eac9, #ffd233);
+  color: #333;
+  border: 2px solid #333;
 }
 
 .project-techno h4 {
@@ -185,11 +185,15 @@ section.presentation {
   text-align: center;
 }
 
-
 /***** CONTACT *****/
 #contact {
-  min-height:90vh;
+  min-height: 90vh;
   padding-top: 30px;
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: left;
 }
 
 label {
@@ -240,7 +244,7 @@ textarea#message:focus {
   width: 200px;
   height: 50px;
   font-size: 1.2rem;
-  
+
   border: 1px solid;
   border-radius: 10px;
 }
@@ -260,7 +264,6 @@ textarea#message:focus {
   bottom: 45%;
   margin: auto;
   right: 40px;
-
 }
 .sideMenu div {
   display: flex;
@@ -268,10 +271,10 @@ textarea#message:focus {
   align-items: center;
   justify-content: center;
 
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   background-color: #333;
-  border-radius: 25%;
+  border-radius: 50%;
   color: white;
 }
 
@@ -285,12 +288,12 @@ footer {
 }
 
 /***** MEDIA *****/
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
   .projects-container {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width:790px) {
+@media screen and (max-width: 790px) {
   .projects-container {
     grid-template-columns: 1fr;
   }
