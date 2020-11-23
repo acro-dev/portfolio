@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  width: 80%;
+  width: 90%;
   max-width: 1400px;
   margin: auto;
 
@@ -261,26 +261,18 @@ textarea#message:focus {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items:center;
   bottom: 45%;
   margin: auto;
   right: 40px;
 }
-.sideMenu div {
-  display: flex;
-  margin: 3px;
-  align-items: center;
-  justify-content: center;
-
-  width: 20px;
-  height: 20px;
-  background-color: #333;
-  border-radius: 50%;
-  color: white;
+.sideMenu i {
+  margin: 10px;
+  color: #333;
+  transform:scale(2);
 }
 
-.goTop a {
-  text-decoration: none;
-}
 /***** FOOTER *****/
 footer {
   line-height: 10vh;
